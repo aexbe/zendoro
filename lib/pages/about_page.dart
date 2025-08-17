@@ -97,7 +97,7 @@ class AboutPage extends StatelessWidget {
 
                 // --- Developer Section ---
                 const Text(
-                  'The Human Behind the Magic',
+                  'Meet the developer',
                   style: TextStyle(fontSize: 18, fontWeight: FontWeight.bold),
                 ),
                 const SizedBox(height: 10),

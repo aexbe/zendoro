@@ -494,7 +494,7 @@ class _FocusPageState extends State<FocusPage> with WidgetsBindingObserver {
           child: Column(
             mainAxisSize: MainAxisSize.min,
             children: [
-              _numField(f, 'Focus (minutes)'),
+              _numField(f, 'Pomodoro (minutes)'),
               _numField(s, 'Short break (minutes)'),
               _numField(l, 'Long break (minutes)'),
               _numField(g, 'Daily goal (hours)', allowDecimal: true),
@@ -556,10 +556,10 @@ class _FocusPageState extends State<FocusPage> with WidgetsBindingObserver {
   // ===== UI components
   Widget _modeTabs() {
     final items = <_Mode, String>{
-      _Mode.focus: 'Focus',
+      _Mode.focus: 'Pomodoro',
       _Mode.shortBreak: 'Short',
       _Mode.longBreak: 'Long',
-      _Mode.rapidFire: 'Rapid',
+      _Mode.rapidFire: 'Focus',
     };
     return Row(
       children: items.entries.map((e) {
@@ -665,7 +665,7 @@ class _FocusPageState extends State<FocusPage> with WidgetsBindingObserver {
           ),
           const SizedBox(height: 6),
           Text(
-            _mode == _Mode.rapidFire ? 'RAPID FIRE' : _mode.name.toUpperCase(),
+            _mode == _Mode.rapidFire ? 'FOCUS SESSION' : _mode.name.toUpperCase(),
             style: GoogleFonts.inter(letterSpacing: 1, color: _inkSoft),
           ),
           const SizedBox(height: 16),

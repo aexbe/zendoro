@@ -664,14 +664,14 @@ class _RecentSessionsTable extends StatelessWidget {
               subtitle: Text(
                   '${(r['hours'] as double).toStringAsFixed(2)} h of focus',
                   style: GoogleFonts.plusJakartaSans(color: Colors.black54)),
-              trailing: IconButton(
-                  icon: Icon(Icons.download_outlined, color: Colors.black54),
-                  onPressed: () {
-                    // export single day CSV / JSON
-                    final csv =
-                        'date,hours\n${DateFormat('yyyy-MM-dd').format(dt)},${(r['hours'] as double).toStringAsFixed(2)}';
-                    // implement share/save
-                  }),
+              //trailing: IconButton(
+              //    icon: Icon(Icons.download_outlined, color: Colors.black54),
+              //    onPressed: () {
+              //      // export single day CSV / JSON
+              //      final csv =
+              //          'date,hours\n${DateFormat('yyyy-MM-dd').format(dt)},${(r['hours'] as double).toStringAsFixed(2)}';
+              //      // implement share/save
+              //    }),
             );
           }),
         ]));
