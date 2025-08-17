@@ -42,3 +42,29 @@ Clone the repo and run:
 flutter clean
 flutter pub get
 flutter run --release
+Connect an Android device or emulator, and you’re good to go 🎉
+
+📸 Screenshots
+(Add your screenshots here, maybe in a nice grid)
+
+🗺️ Future Roadmap
+🌟 Vision Board — pin images, texts, videos & audio for long-term aims
+
+🌑 Dark Board — reflect on regrets & unwanted outcomes if goals fail
+
+🧩 Backlog Page — tough tasks with a reward/points system (gamified productivity!)
+
+🎵 Spotify Integration — sync music with your focus sessions
+
+🔔 Smart Notifications — reminders for focus, breaks & sprints
+
+📄 License
+This project is licensed under the MIT License – see the LICENSE file for details.
+
+💡 Contributing
+Got ideas? Found bugs? PRs and issues are always welcome!
+
+❤️ Acknowledgements
+To everyone who ever got lost in cat videos when they had work to do—you inspired this.
+
+---
