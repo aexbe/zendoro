@@ -49,6 +49,7 @@ class MyApp extends StatelessWidget {
   final _appTheme = FlexThemeData.light(
     scheme: FlexScheme.blackWhite,
     appBarStyle: FlexAppBarStyle.scaffoldBackground,
+    useMaterial3: false,
     subThemesData: const FlexSubThemesData(
       interactionEffects: true,
       tintedDisabledControls: true,

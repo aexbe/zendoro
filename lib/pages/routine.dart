@@ -258,7 +258,7 @@ class _RoutinePlannerWidgetState extends State<RoutinePlannerWidget> {
 
     return Scaffold(
       appBar: AppBar(
-        title: Text('Task Planner', style: GoogleFonts.plusJakartaSans(color: const Color(0xFF15161E), fontSize: 22, fontWeight: FontWeight.w600)),
+        title: Text('Task Planner', style: GoogleFonts.plusJakartaSans(fontSize: 22, fontWeight: FontWeight.w600)),
         elevation: 0,
       ),
       floatingActionButton: FloatingActionButton.extended(
@@ -267,7 +267,7 @@ class _RoutinePlannerWidgetState extends State<RoutinePlannerWidget> {
         label: Padding(
           padding: const EdgeInsets.symmetric(horizontal: 8),
           child: Text('Add New Task', 
-          style: GoogleFonts.plusJakartaSans(fontWeight: FontWeight.bold, fontSize: 16, color: const Color(0xFF15161E))
+          style: GoogleFonts.plusJakartaSans(fontWeight: FontWeight.bold, fontSize: 16, )
           ),
         ),
       ),

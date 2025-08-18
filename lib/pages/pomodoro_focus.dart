@@ -665,7 +665,9 @@ class _FocusPageState extends State<FocusPage> with WidgetsBindingObserver {
           ),
           const SizedBox(height: 6),
           Text(
-            _mode == _Mode.rapidFire ? 'FOCUS SESSION' : _mode.name.toUpperCase(),
+            _mode == _Mode.rapidFire
+                ? 'FOCUS SESSION'
+                : _mode.name.toUpperCase(),
             style: GoogleFonts.inter(letterSpacing: 1, color: _inkSoft),
           ),
           const SizedBox(height: 16),
@@ -902,15 +904,7 @@ class _FocusPageState extends State<FocusPage> with WidgetsBindingObserver {
               _timerCard(),
               const SizedBox(height: 14),
               _weeklyBar(),
-              const SizedBox(height: 14),
-              Text(
-                'History',
-                style: GoogleFonts.plusJakartaSans(
-                  fontWeight: FontWeight.w600,
-                ),
-              ),
               const SizedBox(height: 8),
-              _historyList(),
               TextButton(
                 onPressed: () {
                   Navigator.push(
@@ -924,6 +918,14 @@ class _FocusPageState extends State<FocusPage> with WidgetsBindingObserver {
                       fontSize: 13, fontWeight: FontWeight.bold),
                 ),
               ),
+              const SizedBox(height: 14),
+              Text(
+                'History',
+                style: GoogleFonts.plusJakartaSans(
+                  fontWeight: FontWeight.w600,
+                ),
+              ),
+              _historyList(),
               const SizedBox(height: 24),
               Center(
                 child: Text(
