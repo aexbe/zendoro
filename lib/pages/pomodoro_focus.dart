@@ -873,7 +873,19 @@ class _FocusPageState extends State<FocusPage> with WidgetsBindingObserver {
 
     return Scaffold(
       appBar: AppBar(
-        elevation: 0,
+        leading: IconButton(
+            onPressed: () {
+              if (!_running || _paused) {
+                Navigator.of(context).pop();
+              } else {
+                ScaffoldMessenger.of(context).showSnackBar(
+                  const SnackBar(
+                      content: Text(
+                          'Please stop and save the currrent running or paused timer to go back.')),
+                );
+              }
+            },
+            icon: Icon(Icons.arrow_back)),
         title: Text('Focus & Pomodoro',
             style: GoogleFonts.plusJakartaSans(
                 fontSize: 22, fontWeight: FontWeight.w600)),

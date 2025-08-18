@@ -15,7 +15,7 @@ plugins {
 
 android {
     namespace = "com.focus.zendoro"
-    compileSdk = 35
+    compileSdk = 36
     ndkVersion = "27.2.12479018"
 
     compileOptions {
@@ -30,7 +30,7 @@ android {
 
     defaultConfig {
         applicationId = "com.focus.zendoro"
-        minSdk = 23
+        minSdkVersion(flutter.minSdkVersion)
         targetSdk = 33
         versionCode = flutter.versionCode
         versionName = flutter.versionName
