@@ -1,3 +1,5 @@
+// ignore_for_file: use_build_context_synchronously
+
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:image_picker/image_picker.dart';
@@ -199,7 +201,7 @@ class _AccountSetupPageState extends State<AccountSetupPage> {
               ),
               const SizedBox(height: 16),
               DropdownButtonFormField(
-                value: _gender,
+                initialValue: _gender,
                 items: ["Male", "Female", "Other"]
                     .map((g) => DropdownMenuItem(value: g, child: Text(g)))
                     .toList(),

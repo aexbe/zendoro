@@ -182,6 +182,7 @@ class FocusReportService extends ChangeNotifier {
     final intensity = rolling30; // average over last 30 days
     final freqDays = last30DaysList.where((h) => h >= 0.5).length; // days >= 0.5h
     // normalize and combine
+    // ignore: prefer_is_empty
     final c = (consistency / (_user?.focusEntries?.length == 0 ? 1 : ( _dailyGoalOrDefault() ))) .clamp(0.0, 2.0);
     final i = (intensity / _dailyGoalOrDefault()).clamp(0.0, 2.0);
     final f = (freqDays / 30.0).clamp(0.0, 1.0);

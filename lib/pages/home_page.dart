@@ -1,3 +1,5 @@
+// ignore_for_file: deprecated_member_use, use_build_context_synchronously
+
 import 'dart:typed_data';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
@@ -393,7 +395,7 @@ class _TasksOverview extends StatelessWidget {
                   "Duration: ${task.duration.toStringAsFixed(1)} mins",
                   style: GoogleFonts.plusJakartaSans(fontSize: 13)),
             );
-          }).toList(),
+          }),
         ],
       ),
     );
